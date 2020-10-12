@@ -71,7 +71,12 @@ class ShoppingListFragment : Fragment() {
         rvShoppingList.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
         rvShoppingList.adapter = shoppingListAdapter
         rvShoppingList.setHasFixedSize(true)
-        rvShoppingList.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
+        rvShoppingList.addItemDecoration(
+            DividerItemDecoration(
+                context,
+                DividerItemDecoration.VERTICAL
+            )
+        )
 //        btnAddReminder.setOnClickListener {
 //            val reminder = binding.etReminder.text.toString()
 //            addReminder(reminder)
@@ -126,8 +131,8 @@ class ShoppingListFragment : Fragment() {
         }
     }
 
-    private fun validateFields(txtProductName: EditText
-                               , txtAmount: EditText
+    private fun validateFields(
+        txtProductName: EditText, txtAmount: EditText
     ): Boolean {
         return if (txtProductName.text.toString().isNotBlank()
             && txtAmount.text.toString().isNotBlank()
@@ -215,6 +220,5 @@ class ShoppingListFragment : Fragment() {
             getShoppingListFromDatabase()
         }
     }
-
-
 }
+

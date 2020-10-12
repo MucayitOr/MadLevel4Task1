@@ -17,9 +17,9 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.madlevel4task1.AddShoppingListFragment"
+        android:name="com.example.madlevel4task1.SecondFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_add_shopping_list">
+        tools:layout="@layout/fragment_second">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"

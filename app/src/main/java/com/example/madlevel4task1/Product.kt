@@ -4,8 +4,8 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "reminderTable")
-data class ProductData(
+@Entity(tableName = "productTable")
+data class Product(
 
     @ColumnInfo(name = "name")
     var productName: String,
@@ -15,6 +15,6 @@ data class ProductData(
     var id: Long? = null,
 
     @ColumnInfo(name = "quantity")
-    var productQuantity: Int
+    var productQuantity: Short
 
 )
